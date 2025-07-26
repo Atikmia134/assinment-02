@@ -1,0 +1,206 @@
+/* header */
+ .container-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 150px;
+            margin-right:150px;
+            width: 1140px;
+            height: 71px;
+        }
+        .logo img{
+            width: 135px;
+            width: 82px;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+        }
+        .nav li{
+            padding: 30px;
+        }
+        .nav li a{
+            text-decoration: none;
+            align-items: center;
+
+        }
+        .nav li img{
+            background-color: none;
+            width: 24px;
+            height: 24px;
+        }
+ /* header */
+        
+  @media screen and (max-width:576px){
+            .hide{
+            display: none;
+                 }
+            .container-header{
+                flex-direction: row;
+                align-items: center;
+                width: 361px;
+                height: 38px;
+                margin: 0;
+                padding: 0;
+            }
+            .logo img{
+                width: 63px;
+                height: 38px;
+            }
+            .nav li{
+                margin: 0;
+                padding: 0;
+
+            }
+        }
+  /* banner */
+
+        .container-banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 30px;
+        }
+
+        .banner-text{
+            text-align:start;
+            width: 50%;
+            height: 300px;
+            margin: 0;
+        }
+        .banner-text h2 span{
+            color: coral;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+        .banner-text p{
+            margin: 0;
+            padding: 0;
+        }
+        .banner-img{
+            width: 570px;
+            height: 355px;
+        }
+
+        /* banner  responsive*/
+        @media screen and (max-width:576px) {
+
+            .container-banner{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "banner-img "
+                "banner-text ";
+            }
+
+            .banner-img{
+                grid-area: banner-img;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .banner-text{
+                grid-area:banner-text ;
+                width: 100%;
+            }
+        }
+
+        
+/* flower store */
+
+.container-flower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    gap: 50px;
+    width:1140px;
+    height:597px;
+    margin-left: 100px;
+    margin-right:200px;
+    margin-top:150px;
+    margin-bottom: 90px;
+    
+}
+.flower-store{
+    width:540px;
+    height:590px;
+    grid-area:flower-store ;
+
+}
+.text-box {
+    width:540px;
+    height:521px;
+    grid-area: text-box;
+    }
+ .text-box h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+.text-box ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+.text-box li {
+    max-width: 500px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #000000;
+    }
+
+/* flower store responsive */
+
+   @media screen and (max-width: 576px){
+  .container-flower {
+    display: grid;
+    grid-template-areas: 
+    "flower-store"
+    "text-box";
+    padding: 20px;
+    margin: 0;
+  }
+
+  .flower-store , .text-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-box h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-box li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+/* boom */
+.boom{
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-bottom: -72px;
+}
+.boom img{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 500px;
+    width: 286px;
+    height: 286px;
+}
+/* boom responsive */
+
+@media screen and (max-width:576px) {
+    .boom{
+        display: none;
+    }
+    }
+   
